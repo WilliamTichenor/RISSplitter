@@ -1,7 +1,12 @@
 # RISSplitter
 Python script for splitting an RIS file into several chunks for ease of importing
 
-Syntax:
+Setup:
+```console
+pip install -r requirements.txt
+```
+
+Usage:
 ```console
 python RISSplitter.py <INPUT_FILE> <NUMBER_OF_SEGMENTS>
 ```
