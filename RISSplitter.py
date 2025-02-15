@@ -1,4 +1,5 @@
 import sys
+import os
 import rispy
 
 
@@ -19,6 +20,7 @@ with open(fpath, 'r', encoding="utf-8-sig") as dataFile:
         outputContent[fileNo].append(entry)
         i += 1
     i = 0
+    os.makedirs(directory, exist_ok = True)
     for content in outputContent:
         print(str(len(content))+" Entries")
         outpath = 'output/output-'+str(i)+'.ris'
